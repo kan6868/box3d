@@ -52,7 +52,7 @@ BoxS3D is distributed as a self-hosted Solar2D plugin.
    {
        plugins =
        {
-           ["plugin.box3d"] = { publisherId = "solartools.s3d", 
+           ["plugin.box3d"] = { publisherId = "com.solartools", 
               supportedPlatforms = {
                   ["win32-sim"] = {
                       url = "https://github.com/kan6868/boxs3d/releases/download/v0.2.0/plugin.box3d-win32.tgz"
