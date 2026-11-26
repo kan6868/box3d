@@ -1,0 +1,32 @@
+settings =
+{
+    orientation =
+    {
+        default = "landscapeRight",
+        supported = { "landscapeLeft", "landscapeRight" },
+    },
+    window =
+    {
+        defaultViewWidth = 1280,
+        defaultViewHeight = 720,
+        resizable = true,
+        titleText = { default = "Box3DDemo" },
+    },
+
+    plugins =
+    {
+        ["plugin.s3d"] = { publisherId = "solartools.s3d" },
+        ["plugin.box3d"] = { publisherId = "solartools.s3d" },
+    },
+    android =
+    {
+        applicationChildElements =
+        {
+            [[<meta-data android:name="wantsDepthBuffer" android:value="true" />]],
+        },
+    },
+    excludeFiles =
+    {
+        all = { "*.dll" },
+    },
+}
