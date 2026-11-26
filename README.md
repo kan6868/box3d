@@ -1,12 +1,12 @@
-# BoxS3D
+# Box3D
 
 **3D physics for [Solar3D](https://github.com/kan6868/solar3d/tree/main) on Solar2D.**
 
-Solar3D (`plugin.s3d`) draws the 3D world: meshes, models, lights, shadows, cameras. BoxS3D (`plugin.box3d`) makes
+Solar3D (`plugin.s3d`) draws the 3D world: meshes, models, lights, shadows, cameras. Box3D (`plugin.box3d`) makes
 that world move: rigid bodies, collisions, joints, sensors, raycasts. Together they fill in the 3D feature set that
 Solar2D does not have out of the box.
 
-BoxS3D is a native plugin written in C on top of [Box3D](https://github.com/erincatto/box3d) by Erin Catto (the
+Box3D is a native plugin written in C on top of [Box3D](https://github.com/erincatto/box3d) by Erin Catto (the
 author of Box2D). It uses only Solar2D's public plugin API, so it runs on a stock Solar2D engine.
 
 - **Version:** 0.2.0 (Box3D commit `e48b902`, 2026-11-22)
@@ -36,7 +36,7 @@ iOS, macOS and other platforms are not supported yet.
 
 ## Installation
 
-BoxS3D is distributed as a self-hosted Solar2D plugin.
+Box3D is distributed as a self-hosted Solar2D plugin.
 
 1. Copy the packages into your local plugin storage. Solar2D looks in `%APPDATA%\Solar2DPlugins` on Windows:
 
@@ -55,10 +55,10 @@ BoxS3D is distributed as a self-hosted Solar2D plugin.
            ["plugin.box3d"] = { publisherId = "com.solartools", 
               supportedPlatforms = {
                   ["win32-sim"] = {
-                      url = "https://github.com/kan6868/boxs3d/releases/download/v0.2.0/plugin.box3d-win32.tgz"
+                      url = "https://github.com/kan6868/box3d/releases/download/v0.2.0/plugin.box3d-win32.tgz"
                   },
                   ["android"] = {
-                      url = "https://github.com/kan6868/boxs3d/releases/download/v0.2.0/plugin.box3d-android.tgz"
+                      url = "https://github.com/kan6868/box3d/releases/download/v0.2.0/plugin.box3d-android.tgz"
                   }
               } 
         },
@@ -125,7 +125,7 @@ the on-screen pad to move, and tap the scene to throw a ball.
 | --- | --- |
 | `main.lua` | UI and main loop |
 | `scenes.lua` | The demo scenes |
-| `phys3d.lua` | Small helper that links Solar3D objects to BoxS3D bodies |
+| `phys3d.lua` | Small helper that links Solar3D objects to Box3D bodies |
 | `camera3d.lua` | Orbit camera |
 | `box3d_tests.lua` | Automated tests |
 
