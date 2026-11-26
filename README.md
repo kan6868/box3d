@@ -52,8 +52,8 @@ BoxS3D is distributed as a self-hosted Solar2D plugin.
    {
        plugins =
        {
-           ["plugin.s3d"] = { publisherId = "com.s3d" },
-           ["plugin.box3d"] = { publisherId = "com.s3d" },
+           ["plugin.s3d"] = { publisherId = "solartools.s3d" },
+           ["plugin.box3d"] = { publisherId = "solartools.s3d" },
        },
    }
    ```
